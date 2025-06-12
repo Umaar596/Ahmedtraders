@@ -1,31 +1,145 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ahmed Traders & Steel Store</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ahmad Traders - Quality Products</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+    header {
+      background-color: #003366;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .product {
+      background: #fff;
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .product img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .product h2 {
+      color: #003366;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #007acc;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    footer {
+      background: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    form input, form textarea {
+      padding: 10px;
+      margin: 5px 0 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #007acc;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to Ahmed Traders & Steel Store</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="uses.html">Uses</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  <main>
-    <section class="hero">
-      <h2>Your Ultimate Project Companion</h2>
-      <p>Delivering quality construction materials since 1987</p>
-    </section>
-  </main>
-  <footer>
-    <p>© 2025 Ahmed Traders & Steel Store</p>
-  </footer>
-  <script src="assets/js/script.js"></script>
+
+<header>
+  <h1>Welcome to Ahmad Traders</h1>
+  <p>Reliable Electrical and Household Products</p>
+</header>
+
+<div class="container">
+
+  <div class="product">
+    <img src="https://via.placeholder.com/800x300?text=LED+Bulbs" alt="LED Bulbs">
+    <h2>LED Bulbs</h2>
+    <p><strong>Uses:</strong> Bright, energy-saving lighting for homes, shops, and offices.</p>
+    <p><strong>Benefits:</strong> Long life, low heat, and eco-friendly.</p>
+    <a href="#contact" class="btn">Order Now</a>
+  </div>
+
+  <div class="product">
+    <img src="https://via.placeholder.com/800x300?text=Extension+Cords" alt="Extension Cords">
+    <h2>Extension Cords</h2>
+    <p><strong>Uses:</strong> Power multiple devices at once.</p>
+    <p><strong>Benefits:</strong> Fire-resistant, heavy-duty, child-safe options available.</p>
+    <a href="#contact" class="btn">Order Now</a>
+  </div>
+
+  <div class="product">
+    <img src="https://via.placeholder.com/800x300?text=Electric+Kettles" alt="Electric Kettles">
+    <h2>Electric Kettles</h2>
+    <p><strong>Uses:</strong> Quick boiling for tea, coffee, and cooking.</p>
+    <p><strong>Benefits:</strong> Fast, safe, auto cut-off, available in various sizes.</p>
+    <a href="#contact" class="btn">Order Now</a>
+  </div>
+
+  <div class="product" id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 0300-XXXXXXX</p>
+    <p>📧 ahmadtraders@email.com</p>
+
+    <form action="https://formsubmit.co/ahmadtraders@email.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="What product are you interested in?" rows="4" required></textarea>
+      <button type="submit">Send Inquiry</button>
+    </form>
+  </div>
+
+</div>
+
+<a href="https://wa.me/92300XXXXXXX" class="whatsapp-float" target="_blank">💬</a>
+
+<footer>
+  <p>© 2025 Ahmad Traders. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
